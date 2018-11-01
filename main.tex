@@ -1,0 +1,64 @@
+\documentclass[12pt, oneside]{report}
+\usepackage[a4paper, width=160mm, height=245mm, top=15mm, bottom=22mm, left=30mm, right=20mm, head=3mm, foot=10mm]{geometry}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{setspace}
+
+\renewcommand{\baselinestretch}{1.5} 
+\setlength{\parindent}{2.5cm}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyfoot[CE, CO]{\thepage}
+\fancyfoot[LE, LO]{Study of Gyrotron}
+\fancyfoot[RE, RO]{Vaibhav Balloli}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+
+\date{2018}
+
+\pagenumbering{roman}
+\setcounter{tocdepth}{4}
+
+\begin{document}
+
+\input{chapters/Title}
+
+\chapter*{Abstract}
+\input{chapters/Abstract}
+\addcontentsline{toc}{chapter}{\numberline{}Abstract}
+
+\cleardoublepage
+
+\tableofcontents
+
+\listoftables
+\thispagestyle{empty}
+
+\listoffigures
+\thispagestyle{empty}
+
+\pagenumbering{arabic}
+\chapter{Introduction}
+\input{chapters/Introduction}
+\chapter{History}
+\input{chapters/History}
+\chapter{Principle of Working}
+\input{chapters/Principle}
+\chapter{Gyro-devices}
+\input{chapters/TypesOfGyrotron}
+\chapter{Applications}
+\input{chapters/Applications}
+\chapter{Results}
+\input{chapters/Results}
+\chapter{Conclusions}
+\input{chapters/Conclusions}
+\bibliographystyle{IEEEtran}
+\bibliography{/Users/balli/Documents/emfme/references.bib}
+\pagebreak
+\input{chapters/Declaration}
+
+\end{document}
